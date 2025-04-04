@@ -37,6 +37,8 @@ export default function Forge() {
       inflationCost: newGenerator.cost,
     });
 
+    saveStore.updateUnitCount(saveStore.unitCount - cost);
+
     setFirstGenerator(null);
     setSecondGenerator(null);
 
